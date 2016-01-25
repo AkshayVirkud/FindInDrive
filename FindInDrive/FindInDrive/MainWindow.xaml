@@ -1,0 +1,48 @@
+﻿<Window x:Class="FindInDrive.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="FindInDrive V1.1" Height="800" Width="700" ResizeMode="NoResize">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="90" />
+            <RowDefinition Height="75" />
+            <RowDefinition Height="50" />
+            <RowDefinition Height="60" />
+            <RowDefinition Height="200" />
+            <RowDefinition Height="200" />
+            <RowDefinition Height="70" />
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="275" />
+            <ColumnDefinition Width="250*" />
+        </Grid.ColumnDefinitions>
+        <Label x:Name="lblDriveName" Content="Enter Drive Name  :" HorizontalAlignment="Center"  VerticalAlignment="Top" Grid.Column="0" Grid.Row="0" Margin="78,10,83,0" Width="114"/>
+        <Label Content="Example : C:\Utilities" Grid.Column="0" Grid.Row="0" HorizontalAlignment="Left" Margin="78,40,0,0" VerticalAlignment="Top" Width="162" Foreground="#FF2AB268"/>
+        <TextBox x:Name="txtDriveName" Text="" HorizontalAlignment="Center" VerticalAlignment="Top" Grid.Column="1" Width="272" Height="30" Margin="17,10,39,10"></TextBox>
+        <CheckBox Content="Search All The Drives" Grid.Column="1" Height="31" HorizontalAlignment="Left" Margin="63,59,0,0" Name="chkAllDrives" VerticalAlignment="Top" Width="214" Checked="chkAllDrives_Checked" Unchecked="chkAllDrives_Checked"/>
+
+        <Label x:Name="lblSearchText" Content="Enter Search Text  :" HorizontalAlignment="Center"  VerticalAlignment="Top" Grid.Column="0" Grid.Row="1" Height="26" Margin="78,11,93,0" Width="104"/>
+        <Label Content="Example : ConnectionString" HorizontalAlignment="Left" Margin="78,37,0,0" Grid.Column="0" Grid.Row="1" VerticalAlignment="Top" Width="162" Foreground="#FF2AB268"/>
+        <TextBox x:Name="txtSearchText" Text="" HorizontalAlignment="Center" VerticalAlignment="Top" Grid.Column="1" Grid.Row="1" Width="272" Height="30" Margin="17,10,39,10"></TextBox>
+        <CheckBox Name="chkIsCaseSensitive" Content="Case Sensitive" Grid.Column="1" HorizontalAlignment="Left" Margin="63,50,0,0" Grid.Row="1" VerticalAlignment="Top"/>
+
+        <Label x:Name="lblOutputFileLocation" Content="Enter Search Result File Location :" HorizontalAlignment="Center"  VerticalAlignment="Top" Grid.Column="0" Grid.Row="2" Height="26" Margin="78,10,17,0" Width="180"/>
+        <Label Content="Example : C:\MyFolder" HorizontalAlignment="Left" Margin="78,27,0,0" Grid.Column="0" Grid.Row="2" VerticalAlignment="Top" Width="180" Foreground="#FF2AB268"/>
+        <TextBox x:Name="txtOutputFileLocation" Text="" HorizontalAlignment="Center" VerticalAlignment="Top" Grid.Column="1" Grid.Row="2" Width="272" Height="30" Margin="17,10,39,10"></TextBox>
+
+        <Button x:Name="btnSearch" Content="Search" HorizontalAlignment="Center" VerticalAlignment="Top" Grid.Column="1" Grid.Row="3" Width="100" Height="30" Click="btnSearch_Click" Margin="122,10" />
+
+        <Label Content="Summary :" Grid.Row="4" Height="28" HorizontalAlignment="Left" Margin="10,10,0,0" Name="label1" VerticalAlignment="Top" Width="150" />
+        <TextBox x:Name="txtOutput" HorizontalAlignment="Center" VerticalAlignment="Top" Grid.Row="4" Width="500" Height="100" ScrollViewer.VerticalScrollBarVisibility="Auto" ScrollViewer.HorizontalScrollBarVisibility="Auto" Grid.ColumnSpan="2" Margin="10,50,29,30" FontSize="14" />
+
+        <Label Content="UnAuthorized Drives /Files :" Grid.Row="5" Height="28" HorizontalAlignment="Left" Margin="10,10,0,0" Name="lblSummary" VerticalAlignment="Top" Width="150" />
+        <TextBox x:Name="txtUnAuthorizedDrives" HorizontalAlignment="Center" VerticalAlignment="Top" Grid.Row="5" Width="500" Height="100" ScrollViewer.VerticalScrollBarVisibility="Auto" ScrollViewer.HorizontalScrollBarVisibility="Auto" Grid.ColumnSpan="2" Margin="10,50,29,30" FontSize="14" />
+
+        <Label x:Name="lblError" Content="" HorizontalAlignment="Left" Margin="31,8,0,0" Grid.Row="6" VerticalAlignment="Top" Width="526" Height="49" Grid.ColumnSpan="2" Foreground="Red" FontSize="16" FontWeight="Bold" />
+
+
+
+
+    </Grid>
+</Window>

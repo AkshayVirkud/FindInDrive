@@ -1,0 +1,38 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FindInDrive", "FindInDrive\FindInDrive.csproj", "{BF3A4A52-5E23-4654-9636-54F2D9E3F1AF}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "FindInDriveSetup", "FindInDriveSetup\FindInDriveSetup.vdproj", "{ED32C68D-9C9F-4A64-B7FD-1B91E9C0858D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		CD_ROM|Any CPU = CD_ROM|Any CPU
+		Debug|Any CPU = Debug|Any CPU
+		DVD-5|Any CPU = DVD-5|Any CPU
+		Release|Any CPU = Release|Any CPU
+		SingleImage|Any CPU = SingleImage|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BF3A4A52-5E23-4654-9636-54F2D9E3F1AF}.CD_ROM|Any CPU.ActiveCfg = Release|Any CPU
+		{BF3A4A52-5E23-4654-9636-54F2D9E3F1AF}.CD_ROM|Any CPU.Build.0 = Release|Any CPU
+		{BF3A4A52-5E23-4654-9636-54F2D9E3F1AF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BF3A4A52-5E23-4654-9636-54F2D9E3F1AF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BF3A4A52-5E23-4654-9636-54F2D9E3F1AF}.DVD-5|Any CPU.ActiveCfg = Debug|Any CPU
+		{BF3A4A52-5E23-4654-9636-54F2D9E3F1AF}.DVD-5|Any CPU.Build.0 = Debug|Any CPU
+		{BF3A4A52-5E23-4654-9636-54F2D9E3F1AF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BF3A4A52-5E23-4654-9636-54F2D9E3F1AF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BF3A4A52-5E23-4654-9636-54F2D9E3F1AF}.SingleImage|Any CPU.ActiveCfg = Release|Any CPU
+		{BF3A4A52-5E23-4654-9636-54F2D9E3F1AF}.SingleImage|Any CPU.Build.0 = Release|Any CPU
+		{ED32C68D-9C9F-4A64-B7FD-1B91E9C0858D}.CD_ROM|Any CPU.ActiveCfg = Release
+		{ED32C68D-9C9F-4A64-B7FD-1B91E9C0858D}.Debug|Any CPU.ActiveCfg = Debug
+		{ED32C68D-9C9F-4A64-B7FD-1B91E9C0858D}.DVD-5|Any CPU.ActiveCfg = Debug
+		{ED32C68D-9C9F-4A64-B7FD-1B91E9C0858D}.Release|Any CPU.ActiveCfg = Release
+		{ED32C68D-9C9F-4A64-B7FD-1B91E9C0858D}.SingleImage|Any CPU.ActiveCfg = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
